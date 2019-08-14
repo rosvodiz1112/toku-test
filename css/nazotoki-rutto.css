@@ -1,0 +1,153 @@
+
+
+html {
+    background-color:＃000;
+    }
+
+body {
+-webkit-text-size-adjust: 100%;
+}
+
+.catchcopyContainer {
+    width: auto;
+    height: auto;
+    position: absolute;
+    margin-top:1rem;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-25%);
+    -webkit- transform: translateX(-25%);
+}
+
+.catchcopy {
+    writing-mode: vertical-rl;
+    font-family: "ruriiro";
+    font-size: 2.2rem;
+
+}
+
+.pagetitle{
+    font-size: 2rem;
+}
+
+.pagetitleEng{
+    font-size: 1.5rem;
+}
+
+
+
+@media(max-width:1024px){
+    h2{font-size:3rem;}
+}
+
+
+.nazotoki{
+    width:auto;
+    height:200px;
+}
+
+/*各部会企画紹介*/
+@media screen and (min-width:1025px) {
+    .productBoxContainer {
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        /*background-color: pink;*/
+    }
+
+    .productBox {
+        width: 50rem;
+        height: 50rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .productBoxContainer {
+        width: 80%;
+        height: flex;
+        margin-left: 20%;
+        /*background-color: pink;*/
+    }
+
+    .productBox {
+        width: 50rem;
+        height: 50rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        position: relative;
+        display: inline-block;
+        /*background-color: blue;*/
+    }
+}
+
+.scheduleLarge {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: solid 2px #ffffff;
+    box-sizing: border-box;
+    float: left;
+}
+
+.scheduleLargeLink :hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.productPhoto {
+    width: 100%;
+    height: 64%;
+    background-color: #ffffff;
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.photo1{background-image: url(../sanrikunow-special/sanrikunow2019-taiken/img/sanriku-handcraft-tents.JPG);}
+.photo2{background-image: url(../sanrikunow-special/sanrikunow2019-kitchen/img/sanriku-canteen2017.JPG);}
+.photo3{background-image: url(../marche/img/nizakana.jpg);}
+.photo4{background-image: url(../sanrikunow-special/sanrikunow2019-stage/img/yuruchara-with-MC.JPG);}
+
+
+
+.photoTitle {
+    color: #59b3e8;
+    display: inline-block;
+    font-size: 5rem;
+    margin-left: 2.5rem;
+    margin-top: 2rem;
+    z-index: 2;
+}
+
+.scheduleLargeArticle {
+    width: 100%;
+    height: 36%;
+    display: inline-block;
+    background-color: #ff9580;
+}
+
+.answerContainer{
+    text-align: center;
+}
+
+.answerDescription{
+    font-size:2rem;
+}
+
+.hint {
+    text-align: center;
+}
+
+.hint img {
+  margin-top: 3rem;
+}

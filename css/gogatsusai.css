@@ -1,0 +1,494 @@
+/*全体設定*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-color: #58b3e8;
+    font-size: 62.5%;
+    font-family: 'hiragino';
+}
+
+
+body {
+    height: 100%;
+    background-color: #58b3e8;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/Gotham-XLight.otf');
+}
+
+@font-face {
+    font-family: 'ruriiro';
+    src: url('../fonts/ruriiro.ttf');
+}
+
+@font-face {
+    font-family: 'hiragino';
+    src: url('../fonts/hiragino.ttc');
+}
+
+@font-face {
+    font-family: 'hiraginoW0';
+    src: url('../fonts/hiraginoW0.ttc');
+}
+
+@font-face {
+    font-family: 'chogokuboso';
+    src: url('../fonts/chogokuboso.ttf')
+}
+
+.Animatedbutton {
+    display: inline-block;
+    width: 20rem;
+    height: 5.4rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 5.4rem;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.Animatedbutton::before,
+.Animatedbutton::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+
+.Animatedbutton,
+.Animatedbutton::before,
+.Animatedbutton::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+
+.Animatedbutton {
+    /*    position: relative;*/
+    position: absolute;
+    z-index: 2;
+    background-color: #ff9580;
+    border: 2px solid #ff9580;
+    color: #fff;
+    line-height: 5.0rem;
+    margin-top:2rem;
+}
+
+
+.Animatedbutton:hover {
+    background-color: #fff;
+    border-color: #ff9580;
+    color: #ff9580;
+}
+
+.Animatedbutton::before,
+.Animatedbutton::after {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ff9580;
+}
+
+.Animatedbutton::before {
+    right: 0;
+}
+
+.Animatedbutton::after {
+    left: 0;
+}
+
+.Animatedbutton:hover::before,
+.Animatedbutton:hover::after {
+    width: 0;
+    background-color: #59b1eb;
+}
+
+
+/*ページボックス*/
+
+.pagebox {
+    height: 100%;
+    width: 100%;
+    background-color: #58b3e8;
+}
+
+.pageboxLarge {
+    height: auto;
+    width: 100%;
+    background-color: #58b3e8;
+}
+
+.pagetitle {
+    color: #f0f0f2;
+    text-align: center;
+    font-family: 'hiragino';
+    padding-top: 3.0rem;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.pagetitleEng {
+    color: #f0f0f2;
+    text-align: center;
+    font-family: "gotham";
+    font-size: 0.7rem;
+    letter-spacing: 0.5rem;
+}
+
+.pagetitleblack {
+    color: #111111;
+    text-align: center;
+    font-family: 'hiragino';
+    padding-top: 3.0rem;
+    font-size: 2rem;
+}
+
+.pagetitleblackEng {
+    color: #111111;
+    text-align: center;
+    font-family: "gotham";
+    font-size: 0.7rem;
+    letter-spacing: 0.5rem;
+}
+
+/*ボタン*/
+
+.Animatedbutton {
+    display: inline-block;
+    width: 20rem;
+    height: 5.4rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 5.4rem;
+    outline: none;
+    font-size: 1.8rem;
+}
+
+.Animatedbutton::before,
+.Animatedbutton::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+
+.Animatedbutton,
+.Animatedbutton::before,
+.Animatedbutton::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+
+.Animatedbutton {
+    /*    position: relative;*/
+    position: absolute;
+    z-index: 2;
+    background-color: #ff9580;
+    border: 2px solid #ff9580;
+    color: #fff;
+    line-height: 5.0rem;
+    /*自分で編集したところ */
+}
+
+
+.Animatedbutton:hover {
+    background-color: #fff;
+    border-color: #ff9580;
+    color: #ff9580;
+}
+
+.Animatedbutton::before,
+.Animatedbutton::after {
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ff9580;
+}
+
+.Animatedbutton::before {
+    right: 0;
+}
+
+.Animatedbutton::after {
+    left: 0;
+}
+
+.Animatedbutton:hover::before,
+.Animatedbutton:hover::after {
+    width: 0;
+    background-color: #59b1eb;
+}
+
+.btnCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3.0rem;
+}
+
+/*pageTopボタン*/
+
+#pageTop {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+
+
+#pageTop i {
+    padding-top: 6px
+}
+
+
+
+#pageTop a {
+    display: block;
+    z-index: 999;
+    width: 5rem;
+    height: 5rem;
+    background-color: #ff9580;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#pageTop a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+
+/*トップページ*/
+
+#topPage {
+    background-image : url("../img/UTokyo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #222222;
+    background-blend-mode: overlay;
+
+
+}
+
+.navcontainer {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+}
+
+nav {
+    overflow: hidden;
+    float: right;
+}
+
+.nav {
+    color: #f0f0f2;
+    font-family: "gotham";
+    text-decoration: none;
+    padding: 2.0rem 3.0rem 2.0rem 3.0rem;
+    border-right: dotted 0.1rem #f0f0f2;
+
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    padding-top: 3.0rem;
+    padding-bottom: 3.0rem;
+    margin-top: 5.0rem;
+    font-size: 1.4rem;
+}
+
+.nav:hover {
+    color: #ff9580;
+    transition: 0.3s;
+}
+
+.catchcopyContainer {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translateX(-50%);
+    -webkit- transform: translateX(-50%);
+
+}
+
+.catchcopy {
+    /*    writing-mode: vertical-rl;*/
+    font-family: "chogokuboso";
+    font-size: 20rem;
+    color: white;
+    position: relative;
+}
+
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 1.6rem;
+    color: #ffffff;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.arrow::before,
+.arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.toAbout::before {
+    width: 4rem;
+    height: 4rem;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.toActivity::before {
+    width: 4rem;
+    height: 4rem;
+    border-top: 2px solid #777777;
+    border-right: 2px solid #777777;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+
+
+.arrowContainer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+}
+
+.arrowContainerAbout {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 190%;
+    text-align: center;
+}
+
+
+/*GOGATSUSAI*/
+
+#gogatsusai {}
+
+.gogatsusaiArticle {
+
+    width: 80%;
+    height: 80%;
+    color: #ffffff;
+    display: inline-flex;
+    /*    background-color: pink;*/
+    margin: 3% 10% 1% 10%;
+    overflow: hidden;
+}
+
+
+.container-left {
+    /*    background-color: coral;*/
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+
+.container-right {
+        background-color: blue;
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+}
+
+.articleTitle {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 5rem;
+    margin-top: 2rem;
+    z-index: 2;
+    width: 100%;
+    height: 8rem;
+    /*    background-color: coral;*/
+    text-decoration: none;
+    border-bottom: 2px solid #ffffff;
+    border-bottom-style: dotted
+}
+
+.gogatsusaiArticleText {
+    display: block;
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.whatIsTakosen{
+    color:#ffffff;
+    font-size: 1.8rem;
+}
+
+p{
+color:#ffffff;
+    font-size: 1.4rem;
+}
+
+/*copyright*/
+
+footer {
+    top: auto;
+    /*    ↑これ合ってる？*/
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+}

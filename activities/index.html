@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToKu 活動記録</title>
+    <link rel="stylesheet" href="../css/mobile.css" media="screen and (max-width:767px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (max-width:1024px) and (min-width:768px)">
+    <link rel="stylesheet" href="../css/style.css" media="screen and (min-width:1025px)">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.pagination.js"></script>
+    <script>
+      $(function($) {
+        $('.newsContainer').pagination({
+          element      :'.newsBox > div',
+          prevText     : '<',
+          nextText     : '>',
+          firstText    : '<<',
+          lastText     : '>>',
+          ellipsisText : '・・・',
+          viewNum      : 6,
+          pagerNum     : 3,
+          ellipsis     : true,
+          linkInvalid  : true,
+          goTop        : true,
+          firstLastNav : false,
+          prevNextNav  : false
+        });
+      });
+    </script>
+    <link rel="shortcut icon" href="../img/favicon.png">
+</head>
+
+<body>
+
+    <!--ロード画面-->
+
+    <!--トップページ-->
+    <div id="topPage" class="pagebox">
+
+        <div class="navcontainer">
+            <a href="../index.html"><img src="../img/LogoWhite.png" alt="" style="width:20%; z-index:500;margin-left:10%; position:relative;"></a>
+            <nav id="top-menu">
+                <ul>
+                    <li><a href="../index.html" class="nav">HOME</a></li>
+                    <li><a href="../index.html#about" class="nav">ABOUT</a></li>
+                    <li><a href="../index.html#schedule" class="nav">SCHEDULE</a></li>
+                    <li><a href="../index.html#member" class="nav">MEMBER</a></li>
+                    <li><a href="../index.html#contact" class="nav">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="catchcopyContainer">
+            <p class="catchcopy">活 動 記 録 一 覧</p>
+        </div>
+
+        <div class="arrowContainer">
+            <a href="#list" class="arrow toAbout"></a>
+        </div>
+
+    </div>
+
+    <!--活動報告-->
+    <div id="list" class="pageboxLarge">
+        <p class="pagetitle">活動記録</p>
+        <p class="pagetitleEng">ACTIVITY</p>
+        <div class="newsContainer">
+          <div class="newsBox">
+          <!--Article 18-->
+          <div class="news">
+              <div class="newsPhoto photo18"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">女川・石巻旅行</span><br>
+                  <p class="Article">2019年6月29日(土)・30日(日)にメンバー4人で女川と石巻に行ってきました！早朝に東京を出発して...（K.M.）</p>
+                  <p class="Article uploadInfo">更新:2019.7.9</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-07/onagawa-travel/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 17-->
+          <div class="news">
+              <div class="newsPhoto photo17"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">エコライフ・フェア2019</span><br>
+                  <p class="Article">2019年6月1(土)-2(日)に代々木公園でエコライフ･フェア2019に参加しました！エコライフ・フェアは、環境省が...（K.N.）</p>
+                  <p class="Article uploadInfo">更新:2019.6.15</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-06/ecolifefair-2019/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 16-->
+          <div class="news">
+            <div class="newsPhoto photo16"></div>
+            <div class="newsArticle">
+                <span class="ArticleTitle">さんりくるっと2019</span><br>
+                <p class="Article">2019年6月1日、岩手県釜石市で行われたイベント「三陸なう」のお手伝いをしてきました！さんりくるっとは、...（M.H.）</p>
+                <p class="Article uploadInfo">更新:2019.6.12</p>
+            </div>
+            <div class="newsButton">
+                <a class="square_btn" href="../2019-06/sanrikurutto-2019/index.html">▶︎<span class="more">詳細</span></a>
+            </div>
+          </div>
+
+          <!--Article 15-->
+          <div class="news">
+              <div class="newsPhoto photo15"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">富士山旅行</span><br>
+                  <p class="Article">2019.5.11-12にToKuメンバー10人で山中湖に旅行に行きました！初日は山中湖の周りを...（Y.N.）</p>
+                  <p class="Article uploadInfo">更新:2019.5.15</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-05/fujisan-travel/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 14-->
+          <div class="news">
+              <div class="newsPhoto photo14"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">GW気仙沼旅行</span><br>
+                  <p class="Article">2019.5.4~5.5に、川嶋・藤岡が気仙沼に遊びに行きました！今回は、ToKuメンバーだけでなく...（E.F.）</p>
+                  <p class="Article uploadInfo">更新:2019.5.9</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-05/kesennuma-travel/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 13-->
+          <div class="news">
+              <div class="newsPhoto photo13"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">三陸なう2019始動!</span><br>
+                  <p class="Article">4/21に定例会を行い、三陸なう2019の準備が本格的にスタートしました！はじめに、三陸なう...（Y.N.）</p>
+                  <p class="Article uploadInfo">更新:2019.4.28</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-04/sanriku-now-2019-start/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 12-->
+          <div class="news">
+              <div class="newsPhoto photo12"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">2019年度新歓</span><br>
+                  <p class="Article">4/13に外苑前の「ル シェーヌ」というフレンチバルで、新入生歓迎会を行いました。...（R.A.）</p>
+                  <p class="Article uploadInfo">更新:2019.4.21</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-04/welcome-event-2019/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+           <!--Article 11-->
+          <div class="news">
+              <div class="newsPhoto photo11"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">三陸鉄道リアス線開通！</span><br>
+                  <p class="Article">2019年3月23日にJR山田線の宮古駅から釜石駅間がJR東日本から三陸鉄道に運営移管され、南・北リ...（M.K.）</p>
+                  <p class="Article uploadInfo">更新:2019.3.23</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-03/santetsu_open/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 10-->
+          <div class="news">
+              <div class="newsPhoto photo10"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">三陸合宿～春の陣～</span><br>
+                  <p class="Article">2019年3月17日から19日まで2泊3日で春の合宿に行ってきました！1日目〈東京～女川～陸前高田〉...（M.K.）</p>
+                  <p class="Article uploadInfo">更新:2019.3.22</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-03/gassyuku_201903/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 9-->
+          <div class="news">
+              <div class="newsPhoto photo9"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">正徳寺の愛犬タビ</span><br>
+                  <p class="Article">無限にかわいい とても人懐っこくて愛嬌たっぷり。（R.S.）</p>
+                  <p class="Article uploadInfo">更新:2019.3.17</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-03/tabi/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 8-->
+          <div class="news">
+              <div class="newsPhoto photo8"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">防災・減災コンテスト</span><br>
+                  <p class="Article">2019年2月23日に岩手県大船渡市の防災観光交流センターで、大船渡津波伝承館主催の防災・減災コン...(Y.N.)                <p class="Article uploadInfo">更新:2019.2.24</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-02/bousai-contest/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 7-->
+          <div class="news">
+              <div class="newsPhoto photo7"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">2018三陸なう開催報告会</span><br>
+                  <p class="Article">2018年12月15日(土)~16日(日)に上野恩賜公園で開催された「2018三陸なう」の報告会を開き...（R.S.）</p>
+                  <p class="Article uploadInfo">更新:2019.2.11</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2019-02/report-sanriku-now-2018/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 6 -->
+          <div class="news">
+              <div class="newsPhoto photo6"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">第６回三陸なう(2018)</span><br>
+                  <p class="Article">2018年12月15日〜16日の二日間、東京の上野公園にて「三陸なう2018」を開催いたしま...(R.S.)</p>
+                  <p class="Article uploadInfo">更新:2019.2.24</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2018-12/sanriku-now-2018/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 5 -->
+          <div class="news">
+              <div class="newsPhoto photo5"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">さんままつりに突撃！</span><br>
+                  <p class="Article">2018.9.23(日)、数人のメンバーで、「三陸・大船渡 東京タワーさんままつり」に行ってきました！さんままつりでは、さんま...（Y.N.）</p>
+                  <p class="Article uploadInfo">更新:2018.9.23</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2018-09/sanma-festival/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 4 -->
+          <div class="news">
+              <div class="newsPhoto photo4"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">信州の美味いもの研究!</span><br>
+                  <p class="Article">９月21日に丸の内MY PLAZAで行われた信州マルシェ＆物産フェアのお手伝いをさせていただき...（H.S.）</p>
+                  <p class="Article uploadInfo">更新:2018.9.21</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2018-09/nagano-marche/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 3 -->
+          <div class="news">
+              <div class="newsPhoto photo3"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">三陸合宿〜秋の陣〜</span><br>
+                  <p class="Article">我々ToKuは、９月６～８日に三陸合宿を行いました。この合宿は、三陸の魅力を伝えるために、自分た...（R.A.）</p>
+                  <p class="Article uploadInfo">更新:2018.9.10</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2018-09/autumn-camp/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 2 -->
+          <div class="news">
+              <div class="newsPhoto photo2"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">東大五月祭にて</span><br>
+                  <p class="Article">私たちToKuは2018年5月19日、20日に東京大学本郷キャンパスにて開催された、五月祭に出店し、...（R.M.）</p>
+                  <p class="Article uploadInfo">更新:2018.5.20</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2018-05/may-festival/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+          <!--Article 1 -->
+          <div class="news">
+              <div class="newsPhoto photo1"></div>
+              <div class="newsArticle">
+                  <span class="ArticleTitle">第５回三陸なう(2017)</span><br>
+                  <p class="Article">１２月９日、１０日に上野恩賜公園にて三陸の魅力を伝えるイベントを開催しました。一言で三...(M.K.)</p>
+                  <p class="Article uploadInfo">更新:2018.9.23</p>
+              </div>
+              <div class="newsButton">
+                  <a class="square_btn" href="../2017-12/sanriku-now-2017/index.html">▶︎<span class="more">詳細</span></a>
+              </div>
+          </div>
+
+        </div>
+        <div class="pager"></div>
+        <!-- <div class="pageNum"><span class="nownum"></span>/<span class="totalnum"></span>pages</div> -->
+      </div>
+    </div>
+
+    <p class="pagetitle">続々更新中!</p>
+    <p class="pagetitleEng">keep updating...</p>
+
+
+
+    <!--問い合わせ-->
+    <div id="contact">
+<!--
+        <p class="pagetitle">お問い合わせ</p>
+        <p class="pagetitleEng">CONTACT</p>
+
+        <div class="contactLogo">
+            <img src="../img/LogoWhite.png" alt="">
+        </div>
+        <div class="welcome">
+            <p>一緒に活動してくれる仲間を随時募集しています！<br> 是非気軽にご連絡ください。
+            </p>
+-->
+            <!--問い合わせボタン-->
+<!--
+            <a href="mailto:rintaro.kudo@gmail.com?subject=お問い合わせ" class="flat_ss">
+    <span class="iconback pkt"><i class="far fa-envelope"></i></span><span class="btnttl">お問い合わせ</span>
+</a>
+-->
+            <!--twitter-->
+<!--
+            <a class="share_btn2 shtw" target=”_blank” href="https://twitter.com/ToKu_withus">
+  <i class="fab fa-twitter"></i>
+</a>
+-->
+            <!--facebook-->
+<!--
+            <a class="share_btn2 shfb" target=”_blank” href="https://www.facebook.com/talk.toku/">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+        </div>
+-->
+    </div>
+
+    <footer>
+        <p>&copy;学生団体&nbsp;ToKu</p>
+    </footer>
+    <!--ページ上部へのボタン-->
+    <p id="pageTop"><a href="#">Top</a></p>
+
+    <nav class="clone-nav is-show"></nav>
+
+
+</body>
+
+</html>

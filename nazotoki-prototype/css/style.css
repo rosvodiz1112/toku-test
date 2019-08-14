@@ -1,0 +1,230 @@
+/*全体設定*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-color: #ffffe0;
+    font-size: 62.5%;
+    font-family: 'hiragino';
+}
+
+
+body {
+    height: 100%;
+    background-color: #ffffe0;
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/Gotham-XLight.otf');
+}
+
+@font-face {
+    font-family: 'ruriiro';
+    src: url('../fonts/ruriiro.ttf');
+}
+
+@font-face {
+    font-family: 'hiragino';
+    src: url('../fonts/hiragino.ttc');
+}
+
+@font-face {
+    font-family: 'hiraginoW0';
+    src: url('../fonts/hiraginoW0.ttc');
+}
+
+@font-face {
+    font-family: 'chogokuboso';
+    src: url('../fonts/chogokuboso.ttf')
+}
+
+
+/*ページボックス*/
+
+.pagebox {
+    height: 100%;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+.pageboxLarge {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 1px;
+}
+
+.pagetitle {
+    color: black;
+    text-align: center;
+    font-family: 'hiragino';
+    font-weight:700;
+    padding-top: 3.0rem;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.pagetitleEng {
+    color: dimgray;
+    text-align: center;
+    font-family: "gotham";
+    font-size: 0.7rem;
+    letter-spacing: 0.5rem;
+}
+.pagetitle1 {
+    color: black;
+    margin-left:44%;
+    font-family: 'hiragino';
+    font-weight:700;
+    padding-top: 3.0rem;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.pagetitleEng1 {
+    color: dimgray;
+    margin-left:44%;
+    font-family: "gotham";
+    font-size: 0.7rem;
+    letter-spacing: 0.5rem;
+}
+
+.pagetitleblack {
+    color: #111111;
+    text-align: center;
+    font-family: 'hiragino';
+    padding-top: 3.0rem;
+    font-size: 2rem;
+}
+
+.pagetitleblackEng {
+    color: #111111;
+    text-align: center;
+    font-family: "gotham";
+    font-size: 0.7rem;
+    letter-spacing: 0.5rem;
+}
+
+/*本体*/
+
+.catchcopyContainer {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translateX(-25%);
+    -webkit- transform: translateX(-25%);
+}
+
+.catchcopy {
+    writing-mode: vertical;
+    font-family: "ruriiro";
+    font-size: 2.2rem;
+
+}
+
+.Ba {
+    font-size: 2.5rem;
+    display: inline-block;
+    transform: rotate(8deg);
+    padding-left: 1.0rem;
+    margin-top: -0.5px;
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 1.6rem;
+    color: #ffffff;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.arrow::before,
+.arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.toAbout::before {
+    width: 4rem;
+    height: 4rem;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.toActivity::before {
+    width: 4rem;
+    height: 4rem;
+    border-top: 2px solid #777777;
+    border-right: 2px solid #777777;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+/*
+.toAbout :hover{
+    color:#ff9580;
+    transition:1.0s;
+}
+*/
+
+.arrowContainer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    text-align: center;
+}
+
+.arrowContainerAbout {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 190%;
+    text-align: center;
+}
+
+/*copyright*/
+
+footer {
+    top: 10%;
+    color: #ffffff;
+    text-align: center;
+}
+.top-title {
+
+}

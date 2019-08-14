@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>謎解き「三陸三銃士からの挑戦状」</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nazotoki.css" media="screen and (min-width:768px)">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:767px)">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/nazotoki.js"></script>
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body>
+
+  <!--トップページ-->
+  <div class="pagebox" id="topPage">
+
+    <div class="catchcopyContainer">
+      <img class="nazoTopImg" src="img/topBack-nazo.jpg">
+    </div>
+  </div>
+
+
+  <!-- 回答入力 -->
+  <div class="pageboxLarge">
+    <p class="pagetitle">問題ページ</p>
+    <p class="pagetitleEng">nazotoki page</p>
+    
+    <br> 
+    <br>
+      
+    <!-- 第1問 -->
+    <div class="nazoContainer 1">
+      <!-- 問題 -->
+      <div class="nazo">
+        <h2 class="nazoTitle">問１</h2>
+          <br>
+        <p class="nazoSentence">さかなの上下左右を通らずに最短で迷路を抜け、通った文字を読もう。</p>
+          <br>
+        <img class="nazoImage"src="img/Quiz1.png">
+      </div>
+        <br>
+      <!-- ヒント -->
+      <div class="hint">
+        <div class="hintTitle">
+          <h3>ヒント&#9661;</h3>
+        </div>
+        <div class="hintSentence">
+          <p>さかなの上下左右のマスを塗りつぶしてみよう。通る道が見えてくるはずだよ。</p>
+        </div>
+      </div>
+        <br>
+      <!-- 回答 -->
+      <div class="answer">
+        <label>回答：<input class="answerBox" type="text" name="answer01">
+            <button class="answerBtn 1" type="button" name="check">確認</button></label>
+      </div>
+      <div class="overlay"></div>
+    </div>
+        <br><br><br>
+        
+    <!-- 第2問 -->
+    <div class="nazoContainer 2">
+      <!-- 問題 -->
+      <div class="nazo">
+        <h2 class="nazoTitle">問２</h2>
+          <br>
+        <p class="nazoSentence">矢印の左にはあって、右にはない文字は？（検索OK）</p>
+          <br>
+        <img class="nazoImage"src="img/Quiz2.png">
+      </div>
+        <br>
+      <!-- ヒント1 -->
+      <div class="hint">
+        <div class="hintTitle">
+          <h3>ヒント1&#9661;</h3>
+        </div>
+        <div class="hintSentence">
+            <br>
+          <img class="hintImage" src="img/Q1-Hint1.png">
+        </div>
+      </div>
+        <br>
+        <!-- ヒント2 -->
+      <div class="hint">
+        <div class="hintTitle">
+          <h3>ヒント2&#9661;</h3>
+        </div>
+        <div class="hintSentence">
+            <br>
+          <img class="hintImage" src="img/Q1-Hint2.png">
+        </div>
+      </div>
+        <br>
+      <!-- 回答 -->
+      <div class="answer">
+        <label>回答：<input class="answerBox" type="text" name="answer02">
+            <button class="answerBtn 2" type="button" name="check">確認</button></label>
+      </div>
+      <div class="overlay"></div>
+    </div>
+        <br><br><br>
+    
+    <!-- 第3問 -->
+    <div class="nazoContainer 3">
+    <div class="nazo">
+        <h2 class="nazoTitle">問３</h2>
+          <br>
+        <p class="nazoSentence"></p>
+          <br>
+        <img class="nazoImage"src="img/Quiz3.png">
+      </div>
+        <br>
+       <!-- ヒント1 -->
+      <div class="hint">
+        <div class="hintTitle">
+          <h3>ヒント1&#9661;</h3>
+        </div>
+        <div class="hintSentence">
+            <br>
+          <img class="hintImage" src="img/Q3-Hint1.png">
+        </div>
+      </div>
+        <br>
+        <!-- ヒント2 -->
+      <div class="hint">
+        <div class="hintTitle">
+          <h3>ヒント2&#9661;</h3>
+        </div>
+        <div class="hintSentence">
+            <br>
+          <img class="hintImage" src="img/Q3-Hint2.png">
+        </div>
+      </div>
+        <br>
+      <!-- 回答 -->
+      <div class="answer">
+        <label>回答：<input class="answerBox" type="text" name="answer03">
+            <button class="answerBtn 3" type="button" name="check">確認</button></label>
+      </div>
+      <div class="overlay"></div>
+    </div>
+        <br><br><br>
+        
+    <!--途中の答え確認ページ-->
+    <div class="nazoContainer 4">
+    <div class="nazo">
+        <p>ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+        <br>
+        <h2 class="nazoTitle">こたえの入力</h2>
+          <br>
+        <p class="nazoSentence">ここまでの3問の答えから宝箱のパスワードが2つ分かったようだね。<br>「なくしたもの、なくした場所」のように入力してね。<br>（2つのパスワード表記は正解メッセージと揃えよう）</p></div>
+          <br>
+        <!-- 回答 -->
+      <div class="answer">
+        <label>パスワード：<input class="answerBox" type="text" name="answer05">
+            <button class="answerBtn 5" type="button" name="check">確認</button></label>
+      
+      </div>
+        <div class="overlay"></div>
+       <br> <br> <br>
+      <p>ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+      </div>
+        <br><br><br>
+        
+        <br><br><br>
+        
+    
+    <!-- モーダルウィンドウ -->
+    <!-- true1 -->
+    <div class="modalWindow true1">
+        <img src="img/true1.png">
+      <button class="close true">Close</button>
+    </div>
+    <!-- true2 -->
+    <div class="modalWindow true2">
+        <img src="img/true2.png">
+      <button class="close true">Close</button>
+    </div>
+    <!-- true3 -->
+    <div class="modalWindow true3">
+        <img src="img/true3.png">
+      <button class="close true">Close</button>
+    </div>
+    <!-- true4 -->
+    <div class="modalWindow true4">
+        <img src="img/true4.png" style="margin-bottom: 1.5rem;">
+      <a href="index2.html" class="toLast">いいよ！</a>
+    </div>
+    <!-- false -->
+    <div class="modalWindow false">
+        <img src="img/false.png">
+      <button class="close false">Close</button>
+    </div>
+  </div>
+
+      <!-- To Top -->
+      <p id="pageTop"><a href="#">Top</a></p>
+
+      <nav class="clone-nav is-show"></nav>
+      <footer>
+          <p>&copy;学生団体&nbsp;ToKu</p>
+      </footer>
+
+
+  </body>
+
+</html>

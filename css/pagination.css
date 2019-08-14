@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* div形式 */
+.newsContainer .pager {
+	clear:both;
+	margin:30px 0;
+	text-align:center;
+}
+
+.newsContainer .pager span {
+	margin:6px;
+	padding:8px 12px;
+	font-size: 1.8rem;
+	color:black;
+	background:#ECECEC;
+	/* border:1px solid #ff9580; */
+}
+.newsContainer .pager span:hover {
+	cursor:pointer;
+	background:#ffd4cc;
+}
+
+.newsContainer .pager span.current {
+	color:white;
+	background:#ff9580;
+}
+.newsContainer .pager span.current:hover {
+	cursor:default;
+}
+
+.newsContainer .pager span.invalid {
+	display:none;
+}
+.newsContainer .pager span.invalid:hover {
+	cursor:default;
+}
+
+.newsContainer .pager span.ellipsis {
+	color:#000;
+	background:none;
+	border:none;
+}
+.newsContainer .pager span.ellipsis:hover {
+	cursor:default;
+}
+
+.newsContainer .pager span.first,
+.newsContainer .pager span.last,
+.newsContainer .pager span.prev,
+.newsContainer .pager span.next {
+	background:#cccccc;
+}
+
+.newsContainer .pager span.first:hover,
+.newsContainer .pager span.last:hover,
+.newsContainer .pager span.prev:hover,
+.newsContainer .pager span.next:hover {
+	background:#b3b3b3;
+}
+
+.newsContainer .pageNum {
+	margin:30px 0;
+	text-align:center;
+}
