@@ -113,8 +113,8 @@ html {
 
 .modalWindow{
   text-align: center;
-  width: 350px;
-  height: 291px;
+  width: 70%;
+  height: 30%;
   position: fixed;
 　border: 2px solid #D04255;
   background-color: #FFF;
