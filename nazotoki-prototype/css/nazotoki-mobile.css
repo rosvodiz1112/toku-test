@@ -31,9 +31,10 @@ html {
 }
 
 .hintSentence {
-  font-size: 1.5rem;
-  margin: 5px 15%;
-  width: 70%;
+  font-size: 1.6rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .hintImage{
@@ -54,6 +55,7 @@ html {
   background: #fff;
   border: 2px solid #9c9c9c;
   border-radius: 0.4rem;
+  font-size: 1.6rem;
 }
 
 .answerBtn {
