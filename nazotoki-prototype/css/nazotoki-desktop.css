@@ -1,3 +1,8 @@
+.nazoTopImg {
+  margin: 5% 35%;
+  width: 30%;
+}
+
 /*問題*/
 .nazoContainer {
   margin: 8px 15% 20px 15%;
@@ -79,7 +84,7 @@
 }
 .nextButton{
     width:5%;
-    
+
 }
 
 .nextButton.first{
@@ -173,7 +178,3 @@
   background:#D04255;
   color:white;
 }
-
-
-
-
