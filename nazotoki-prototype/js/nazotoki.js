@@ -24,7 +24,7 @@ $(function () {
       $('.overlay, .modalWindow.false').fadeIn();
     }
   });
-    
+
   //解答ボタン2
   //「KEN」「ＫＥＮ」「けん」「ケン」「剣」は正解
   $(".answerBtn.2").on("click", function() {
@@ -43,7 +43,7 @@ $(function () {
       $('.overlay, .modalWindow.false').fadeIn();
     }
   });
-    
+
   //解答ボタン3
   //「大船渡」「オオフナト」「おおふなと」「大船渡市」は正解
   $(".answerBtn.3").on("click", function() {
@@ -60,7 +60,7 @@ $(function () {
       $('.overlay, .modalWindow.false').fadeIn();
     }
   });
- 
+
   //解答ボタン4
   //「トークロゴ」「とーくろご」「とーくロゴ」「TOKUロゴ」「ToKuロゴ」「ＴＯＫＵロゴ」「ＴｏＫｕロゴ」「TOKUろご」「ToKuろご」は正解
   $(".answerBtn.4").on("click", function() {
@@ -87,7 +87,7 @@ $(function () {
       $('.overlay, .modalWindow.false').fadeIn();
     }
   });
- 
+
 
   //解答ボタン5(中間回答ボタン1)
   //「さんまの剣おおふなと」「さんまの剣、おおふなと」「さんまの剣,おおふなと」「さんまの剣.おおふなと」は正解
@@ -125,11 +125,13 @@ $(function () {
       'top': ((h - ch) / 2) + 'px'
     });
   }
-  //モーダルウィンドウを閉じる
+  //モーダルウィンドウの外をクリックして閉じる
+  $('.overlay').on('click', function() {
+    $('.overlay, .modalWindow').fadeOut();
+  });
+
+  //モーダルウィンドウのボタンをクリックして閉じる
   $('.close').on('click', function() {
     $('.overlay, .modalWindow').fadeOut();
   });
 });
-
-
-
